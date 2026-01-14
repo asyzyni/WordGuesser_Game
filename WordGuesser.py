@@ -27,10 +27,11 @@ while attempts > 0:
         print(f"Salah! Kesempatan tersisa: {attempts}")
         
     if "_" not in guess_word:
-        print("\nSelamat! Kamu menebak kata: " + word)
+        print("\nSelamat! Kamu menebak kata: " + word) # perlu di edit 
         break 
 
 if attempts == 0 and "_" in guess_word:
     print("\nMaaf, kesempatanmu habis. Kata yang benar adalah: " + word)
             
     
+# masih butuh edit, dimana harusnya kalau player udah bener udh finish aja. kecuali dia start lagi. 
