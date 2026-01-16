@@ -13,7 +13,7 @@ attempts = 5
 
 # Game loop 
 
-while attempts > 0:
+while attempts > 0: # ketika attempts masih lebih dari 0
     print("\nCurrent word: " + " ".join(guess_word))
     guess = input("Tebak deh :").lower()
     
@@ -26,11 +26,11 @@ while attempts > 0:
         attempts -= 1 
         print(f"Salah! Kesempatan tersisa: {attempts}")
         
-    if "_" not in guess_word:
-        print("\nSelamat! Kamu menebak kata: " + word) # perlu di edit 
-        break 
+if "_" not in guess_word:
+    print("\nSelamat! Kamu menebak kata: " + word) # perlu di edit 
 
-if attempts == 0 and "_" in guess_word:
+else: 
+    attempts == 0
     print("\nMaaf, kesempatanmu habis. Kata yang benar adalah: " + word)
             
     
